@@ -23,4 +23,9 @@ public class LeetspeakTest {
     Leetspeak newLeetspeak = new Leetspeak();
     assertEquals("1 lik3 1k3", newLeetspeak.isLeetspeak("I like Ike"));
   }
+  @Test
+  public void leetspeak_replacesEverySInAStringWithAZ_wordChanges() {
+    Leetspeak newLeetspeak = new Leetspeak();
+    assertEquals("r0z3z ar3 r3d", newLeetspeak.isLeetspeak("roses are red"));
+  }
 }
