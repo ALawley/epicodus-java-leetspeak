@@ -18,4 +18,9 @@ public class LeetspeakTest {
     Leetspeak newLeetspeak = new Leetspeak();
     assertEquals("b00 b00", newLeetspeak.isLeetspeak("boo boo"));
   }
+  @Test
+  public void leetspeak_replacesEveryIInAStringWithA1_wordChanges() {
+    Leetspeak newLeetspeak = new Leetspeak();
+    assertEquals("1 lik3 1k3", newLeetspeak.isLeetspeak("I like Ike"));
+  }
 }

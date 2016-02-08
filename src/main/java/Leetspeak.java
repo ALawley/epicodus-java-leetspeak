@@ -5,6 +5,7 @@ public class Leetspeak {
     leetspeak = leetspeak.replace("E", "3");
     leetspeak = leetspeak.replace("o", "0");
     leetspeak = leetspeak.replace("O", "0");
+    leetspeak = leetspeak.replace("I", "1");
     return leetspeak;
   }
 }
