@@ -33,4 +33,9 @@ public class LeetspeakTest {
     Leetspeak newLeetspeak = new Leetspeak();
     assertEquals("Suzi3 Sunzhin3", newLeetspeak.isLeetspeak("Susie Sunshine"));
   }
+  @Test
+    public void leetspeak_makesCorrectReplacementsRegardlessOfCase_ignoresUppercase() {
+      Leetspeak newLeetspeak = new Leetspeak();
+      assertEquals( "1 scr3am y0u scr3am w3 all scr3am f0r razpb3rry ic3 cr3am!", newLeetspeak.isLeetspeak("I scream you scream we all scream for raspberry ice cream!"));
+    }
 }
